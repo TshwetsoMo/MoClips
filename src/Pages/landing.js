@@ -4,45 +4,51 @@ import axios from "axios";
 import { Card, Container } from "react-bootstrap";
 import LatestMovies from "../Components/LatestMovies";
 import Movies from "../Components/Movies";
+import MovieCard from "../Components/MovieCard";
+import { Link } from 'react-router-dom';
+//http://www.omdbapi.com/?i=tt3896198&apikey=4932ab16
 
 function Landing(){
 
-    const [apiData, setApiData] = useState([]);
-    const [title, setTitle] = useState('')
-    const [poster, setPoster] = useState('')
-    const [plot, setPlot] = useState("")
+    const [searchTerm, setSearchTerm] = useState('');
+  const [movies, setMovies] = useState([]);
 
-    useEffect(() => {
-        //http://www.omdbapi.com/?i=tt3896198&apikey=4932ab16
-        //http://www.omdbapi.com/?i=tt3896198&apikey=642a9f1a
-        //https://api.themoviedb.org/3/movie/550?api_key={62ba1a4ef927d1596c9797d21fae9310}&callback=test
-        axios.get('https://api.themoviedb.org/3/movie/popular?api_key=62ba1a4ef927d1596c9797d21fae9310')
-        .then((response) => {
-            console.log(response.data);
-            const index = 0;
+  useEffect(() => {
+    const fetchLatestMovies = async () => {
+      try {
+        const response = await axios.get(`http://www.omdbapi.com/?s=${searchTerm}&apikey=4932ab16`);
+        if (response.data.Search) {
+          setMovies(response.data.Search);
+        } else {
+          setMovies([]);
+        }
+      } catch (error) {
+        console.error('Error fetching latest movies:', error);
+        setMovies([]); // Set movies to an empty array in case of error
+      }
+    };
 
-        })
-        .catch((err) => {
-            console.log(err);
-        })
-    }, [])
+    fetchLatestMovies();
+  }, [searchTerm]);
 
-    return(
-        <Container className="Layout">
-            
-            
-            <div>
-                <LatestMovies/>
-            </div>
-            <h1>MOVIES</h1>
-            <div>
-                <Movies/>
-            </div>
-            
-            
-        </Container>
-
-    )
-}
+  return (
+    <div className="latest-movies-page">
+      <h1>Search or Movies</h1>
+      <input
+        type="text"
+        placeholder="Search for a movie..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      /><br/><br/>
+      <div className="movie-list">
+        {movies.map((movie, index) => (
+          <Link to={`/movie/${movie.imdbID}`} key={index}>
+            <MovieCard movie={movie} />
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default Landing;

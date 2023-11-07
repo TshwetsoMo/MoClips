@@ -1,29 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #740101;
+  color: rgb(30, 3, 49);
+}
+
 .App {
   text-align: center;
-  background-color: rgb(56, 15, 85);
-  height: 100%;
+  background-color: #740101;
+  height: 100vh;
+  overflow-y: auto; /* Enable scrolling when content overflows */
+  position: relative;
 }
 
-@import url:("http://cdn.syncfusion.com/ej2/20.1.44/bootstrap5.css");
-
-.BasicNavbar{
-  height: 400px;
+.BasicNavbar {
   width: 100%;
+  background-color: #740101;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-
 .App-header {
   background-color: #740101;
   height: 80px;
-  width: 90vh;
+  width: 100%;
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*justify-content: center;*/
+  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -32,19 +43,15 @@
   color: #61dafb;
 }
 
-.button_container{
+.button_container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:#010541a8;
+  background-color: #010541a8;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 10px;
   width: 100%;
-}
-
-.background_container{
-  background-color: rgb(163, 25, 140);
 }
 
 button {
@@ -55,10 +62,11 @@ button {
   color: rgb(82, 255, 29);
   min-width: 300px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 button:hover {
-  cursor: pointer;
+  background-color: rgb(5, 9, 61);
 }
 
 .flex-container {
@@ -68,38 +76,58 @@ button:hover {
   background-color: rgba(5, 7, 37, 0.945);
 }
 
-movie_item {
+.movie_item {
   padding-top: 20px;
   padding-left: 35px;
   padding-right: 35px;
   padding-bottom: 15px;
 }
 
-.Layout{
-  background-color: #740101;
-  align-content: center;
+.Layout {
   align-items: center;
   height: 100%;
-  width: 99vh;
-  color: rgb(30, 3, 49);
+  width: 100%;
 }
 
-.Latest{
-  height: 60vh;
-  width: 100vh;
+.Latest {
+  min-height: 60vh;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.CMovies{
-  height: 100vh;
-  width: 100vh;
+.CMovies {
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Advanced Search Field */
+.search-field {
+  background-color: rgb(163, 25, 140);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 80%;
+  color: #fff;
 }
 
+.search-field::placeholder {
+  color: #fff;
+}
+
+.movie-comparison-page{
+  height:101%;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  color: #343a40;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+}

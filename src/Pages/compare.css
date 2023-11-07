@@ -1,0 +1,15 @@
+.movie-comparison-page {
+  display: flex;
+  justify-content: space-around;
+}
+
+.chart-container {
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.search-fields {
+  margin-top: 20px;
+}

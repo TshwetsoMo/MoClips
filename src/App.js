@@ -9,6 +9,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import BarChart from './Components/BarChart';
 import RadarChart from './Components/RadarChart';
 import LineChart from './Components/LineChart';
+import MovieProfile from './Components/MovieProfile';
+import Footer from './Components/Footer';
+
 
 function App() {
   return (
@@ -18,7 +21,9 @@ function App() {
         <Route path='/' element= { <Landing /> } />
         <Route path='/time' element= { <Timeline/>} />
         <Route path='/compare' element= { <Compare/>} />
-      </Routes>
+        <Route path="/movie/:id" element={<MovieProfile />} />
+      </Routes><br/>
+      <Footer/>
     </div>
     
   );

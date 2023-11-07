@@ -1,17 +1,7 @@
 import React from 'react';
 import MovieCard from './MovieCard';
 
-const movies = [
-  {
-    name: 'Movie 1',
-    year: 2000,
-    rating: 8.5,
-    plot: 'Plot of Movie 1...',
-  },
-  // Add more movie objects here
-];
-
-const MovieList = () => {
+const MovieList = ({ movies }) => {
   return (
     <div className="movie-list">
       {movies.map((movie, index) => (
