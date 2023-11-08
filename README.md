@@ -80,6 +80,8 @@ Throughout the development process, the architecture of the system was carefully
 ## `Final Outcome`
 ### `Demonstration Video`
 
+https://drive.google.com/file/d/1Htyi2UJNlCMq9savhBM7oy7juo4V8P3C/view?usp=sharing
+
 ## `Conclusion`
 ### `Contribution`
 Contributions are welcome! Fork the repository and create a pull request to enhance the project.
@@ -88,5 +90,5 @@ This project is under the MIT License.
 ### `Author`
 Name: Tshwetso Mokgatlhe
 Email: 221411@virtualwindow.co.za
-## `Acknowledgements`
+### `Acknowledgements`
 Special thanks to my lecturers Tsungai Katsuro and Leo Kuyper, the open-source community, online tutorials, W3schools, Codecademy and documentation that contributed to the project's success.
