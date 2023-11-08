@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+#MoClips
+MoClips Logo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MoClips is a single-page React application that provides a comprehensive movie-related experience. This digital solution, accessible through web browsers, empowers users to explore, compare, and learn about movies. Whether you're searching for specific movies, comparing their ratings and statistics, or diving into the history of cinema, MoClips has you covered.
 
-## Available Scripts
+##Table of Contents
+1. About the Project
+ - Project Description
+ - Built With
+2. Getting Started
+ -Prerequisites
+ -Installation
+3. Project Features
+4. Development Process
+5. Final Outcome
+6. Conclusion
+ -Contribution
+ -License
+ -Author
+ -Acknowledgements
 
-In the project directory, you can run:
+##About the Project
+##Project Description
+MoClips provides users with a visually appealing interface to:
 
-### `npm start`
+ -Search for Movies: Explore detailed information about any movie, including posters, release dates, genres, and plots.
+-Compare Movies: Utilize interactive bar graphs, pie charts, and radar charts to compare movie ratings, metascores, and other statistics.
+ -Explore Movie Timeline: Navigate an interactive timeline showcasing movie posters and release years, offering a historical perspective on cinema.
+ -Outcome: A user-friendly web application that enhances the movie watching experience, providing valuable insights into movies' data and history.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##Built With
+ -React
+ -React ChartJS 2
+ -React Graph Vis
+ -Axios
+ -Bootstrap
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#Getting Started
+##Prerequisites
+ -Node.js
+ -npm (Node Package Manager)
 
-### `npm test`
+#Installation
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Copy code:
+git clone https://github.com/TshwetsoMo/MoClips.git
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Copy code
+cd MoClips
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Copy code
+npm install
 
-### `npm run eject`
+4. Start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Copy code
+npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##Project Features
+##Main Features & Functionality:
+ -Search Movies: Enter a movie name and find detailed information including posters, release dates, genres, and plots.
+ -Compare Movies: Select two movies and view interactive graphs comparing ratings, metascores, and other statistics.
+ -Timeline Exploration: Search for movies and visualize them on an interactive timeline, showcasing release years and posters.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+##Development Process
+Throughout the development process, the architecture of the system was carefully planned. User flows and technical diagrams were utilized to guide the implementation. Challenges faced were tackled through collaborative problem-solving, resulting in a well-structured and responsive application.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+##Final Outcome
+##Demonstration Video
+Watch MoClips in Action
 
-## Learn More
+##Conclusion
+##Contribution
+Contributions are welcome! Fork the repository and create a pull request to enhance the project.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+License
+This project is under the MIT License.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Author
+Your Tshwetso Mokgatlhe
+Email: 221411@virtualwindow.co.za
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##Acknowledgements
+Special thanks to my lecturers Tsungai Katsuro and Leo Kuyper, the open-source community, online tutorials, W3schools, Codecademy and documentation that contributed to the project's success.
